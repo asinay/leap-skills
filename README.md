@@ -14,25 +14,32 @@ This is the exact system I use to help executives and leaders get clear, get vis
 
 **If you're comfortable with GitHub:**
 ```bash
-git clone https://github.com/[your-handle]/leap-skills
+git clone https://github.com/ilanagolanleapacademy/leap-skills
 ```
-Then drop the folder into a Claude Project and start with `voice-builder`.
 
 **If you're not technical:**
 1. Click the green **Code** button above → **Download ZIP**
 2. Unzip the folder
-3. Go to [claude.ai](https://claude.ai) → create a new Project
-4. Upload the skill files you want to use
-5. Start with `foundation/voice-builder.md` — always
+
+**Then, to install all skills into claude.ai:**
+1. Go to [claude.ai](https://claude.ai) → open your Profile → **Customize Claude** → **Upload skill**
+2. Open the `upload-all/` folder — it contains all 11 skill files ready to go
+3. Select all files (`Ctrl+A` on Windows, `Cmd+A` on Mac) and drag them into the upload dialog
+4. All skills are now registered as slash commands (e.g. `/voice-builder`, `/leap-guide`)
+
+> The `upload-all/` folder is a flat copy of all skills — no subfolders — so you can install everything in one drag-and-drop.
 
 ---
 
 ## Start Here
 
+Once installed, type `/leap-guide` in any Claude conversation to get the full map — recommended order, dependencies, and suggested flows for common goals.
+
+Then start with these two skills in order:
+
 ```
-foundation/
-  ├── voice-builder.md        ← Start here. Every other skill reads this.
-  └── audience-builder.md     ← Do this second. Defines who you're writing for.
+/voice-builder      ← Always first. Every other skill reads this.
+/audience-builder   ← Always second. Defines who you're writing for.
 ```
 
 Every skill in this library reads your voice profile. That's what makes the output sound like *you*, not like a generic LinkedIn template.
